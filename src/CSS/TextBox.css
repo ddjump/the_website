@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+#text {
+    position: fixed;
+    top: 40%;
+    left: 54%;
+    margin-top: -100px;
+    margin-left: -200px;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
+    width: 25%;
+    /* background-color:white; */
+}
+
+@keyframes wave {
+    /* 20%  { transform: translateX(4px);  }
+    40%  { transform: translateX(-4px); }
+    60%  { transform: translateX(2px);  }
+    80%  { transform: translateX(-1px); }
+    100% { transform: translateX(0);    } */
+    50% { transform: rotate(10deg); }
+  }
+
+  .wave:hover {
+    animation: wave 1s ease;
+    animation-iteration-count: 3;
+  }
