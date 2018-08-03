@@ -1,0 +1,57 @@
+
+#arrow {
+    top: 5%;
+    left: 3%;
+    position: fixed;
+}
+
+.btn {
+    border: none;
+    color: #5588FF;
+    border-style: solid;
+    border-color:#5588FF;
+    border-width: 3px;
+    font-size: 30px;
+    height:  100px;
+    width: 22%;
+    vertical-align: middle;
+    border-radius: 25px;
+    right: 3%;
+    top: 5%;
+    position: fixed;
+    outline: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+#doc {
+    vertical-align: middle;
+}
+
+.title {
+    font-family: 'Inconsolata', monospace;
+    font-size: 23px;
+    position: fixed;
+    left: 7%;
+}
+
+.programmingBox {
+    border-style: solid;
+    border-width: 3px;
+    border-color: gray;
+    border-radius: 25px;
+    width: 40%;
+    height: 300px;
+    left: 5%;
+    position: fixed;
+}
+
+.educationBox {
+    border-style: solid;
+    border-width: 3px;
+    border-color: gray;
+    border-radius: 25px;
+    width: 40%;
+    height: 300px;
+    right: 5%;
+    position: fixed;
+}

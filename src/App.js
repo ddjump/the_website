@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import TextBox from './Components/TextBox.js';
-import AboutMe from './Components/AboutMe.js';
+import TextBox from './Components/TextBox.jsx';
+import AboutMe from './Components/AboutMe.jsx';
 import { Link } from 'react-router-dom';
 
 class App extends Component {

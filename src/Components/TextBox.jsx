@@ -12,7 +12,7 @@ class TextBox extends React.Component {
     render() {
         return(
             <div id="text">
-                <div className="box wave"><h2><span role='img' aria-label="Close">👋</span></h2></div>Hi, I'm Daniel Yen, a Full Stack Developer who loves to make applications. <HoverEmoji />
+                <div className="box wave"><h2><span role='img' aria-label="Close">👋</span></h2></div>Hi! I'm Daniel Yen, a Full Stack Developer who loves to make applications. <HoverEmoji />
             </div>
         );
     }
