@@ -1,4 +1,5 @@
 
+
 #arrow {
     top: 5%;
     left: 3%;
@@ -6,12 +7,13 @@
 }
 
 .btn {
+    background-color: white;
     border: none;
     color: #5588FF;
     border-style: solid;
     border-color:#5588FF;
     border-width: 3px;
-    font-size: 30px;
+    font-size: 25px;
     height:  100px;
     width: 22%;
     vertical-align: middle;
@@ -29,29 +31,123 @@
 
 .title {
     font-family: 'Inconsolata', monospace;
-    font-size: 23px;
+    font-size: 22px;
     position: fixed;
-    left: 7%;
+    margin-left: 1%;
+    margin-top: 1%;
+    color: #5588FF;
+}
+
+.eduTitle {
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    position: fixed;
+    margin-left: 1%;
+    margin-top: 1%;
+    color: #5588FF;
+}
+
+#stony {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    margin-left: 2%;
+    margin-top: 4%;
+    border-radius: 25px;
+}
+
+#syosset {
+    height: 50px;
+    width: 70px;
+    position: fixed;
+    margin-left: 1.5%;
+    margin-top: 12%;
+}
+
+.workTitle {
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    position: fixed;
+    margin-left: 2%;
+    color: #5588FF;
 }
 
 .programmingBox {
+    /* background-color: #F4F4F4; */
     border-style: solid;
     border-width: 3px;
-    border-color: gray;
+    border-color: #C5C5C5;
     border-radius: 25px;
     width: 40%;
-    height: 300px;
-    left: 5%;
+    height: 55%;
+    left: 3%;
     position: fixed;
+    bottom: 2%;
 }
 
 .educationBox {
+    /* background-color: #F4F4F4; */
+    /* border-style: solid;
+    border-width: 3px;
+    border-color: #C5C5C5;
+    border-radius: 25px;
+    width: 30%;
+    height: 35%;
+    left: 34%;
+    position: fixed;
+    top: 20%; */
+    font-family: 'Inconsolata', monospace;
     border-style: solid;
     border-width: 3px;
-    border-color: gray;
+    border-color: #C5C5C5;
     border-radius: 25px;
     width: 40%;
-    height: 300px;
-    right: 5%;
+    height: 20%;
+    left: 3%;
     position: fixed;
+    top: 20%;
+}
+
+.schoolTitle {
+    position: fixed;
+    margin-top: 4%;
+    margin-left: 7%;
+    font-size: 19px;
+}
+
+.schoolTitle2 {
+    position: fixed;
+    margin-top: 8%;
+    margin-left: 8%;
+    font-size: 13px;
+}
+
+#schoolCourseWork {
+    position: fixed;
+    margin-top: 5%;
+    margin-left: 28%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    width: 10%;
+    height: 5%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #5588FF;
+    color: #5588FF;
+    border-radius: 25px;
+    outline: 0;
+    background-color: white;
+}
+
+.workBox {
+    /* background-color: #F4F4F4; */
+    border-style: solid;
+    border-width: 3px;
+    border-color: #C5C5C5;
+    border-radius: 25px;
+    width: 52%;
+    height: 77%;
+    right: 3%;
+    position: fixed;
+    top: 20%;
 }
