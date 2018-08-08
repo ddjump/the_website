@@ -5,6 +5,17 @@ import '../CSS/Resume.css';
 import docIcon from '../Images/document.png';
 import ResumeDoc from '../Images/Resume.pdf';
 import stonyIcon from '../Images/stonyBrookIcon.png';
+import SkillBar from '../ReuseComponent/SkillBar.jsx';
+import javaIcon from '../Images/javaIcon.png';
+import javaScriptIcon from '../Images/javascriptIcon.png';
+import pythonIcon from '../Images/pythonIcon.png';
+import swiftIcon from '../Images/swiftIcon.png';
+import htmlIcon from '../Images/htmlIcon.png';
+import cssIcon from '../Images/cssIcon.png';
+import reactIcon from '../Images/reactIcon.png';
+import nodejsIcon from '../Images/nodejsIcon.png';
+import mysqlIcon from '../Images/mysqlIcon.png';
+import graphqlIcon from '../Images/graphqlIcon.svg';
 
 class Resume extends React.Component {
     // componentDidMount() {
@@ -16,7 +27,7 @@ class Resume extends React.Component {
             <div id="mainResume">
                 <div id="container">
                     <Link to="/"><img alt="arrow" id="arrow" src={ arrow }/></Link>
-                    <center><h1>Resume</h1></center>
+                    <center><h1 id="resumeTitle">Resume</h1></center>
                     <IconButton />
                     <ProgrammingBox />
                     <EducationBox />
@@ -42,6 +53,22 @@ class ProgrammingBox extends React.Component {
         return(
             <div className="programmingBox">
                 <b><p className="title">Languages and Frameworks</p></b>
+                <div className="programmingSkill">
+                    <div className="firstProgramming">
+                        <SkillBar image={javaIcon} lang="Java" skillLevel="88"/>
+                        <SkillBar image={javaScriptIcon} lang="Javascript" skillLevel="88"/>
+                        <SkillBar image={pythonIcon} lang="Python" skillLevel="88"/>
+                        <SkillBar image={swiftIcon} lang="Swift" skillLevel="88"/>
+                        <SkillBar image={htmlIcon} lang="HTML" skillLevel="88"/>
+                    </div>
+                    {/* <div className="secondProgramming">
+                        <SkillBar image={cssIcon} lang="CSS" skillLevel="88"/>
+                        <SkillBar image={reactIcon} lang="React.js" skillLevel="88"/>
+                        <SkillBar image={nodejsIcon} lang="Node.js" skillLevel="88"/>
+                        <SkillBar image={mysqlIcon} lang="mySQL" skillLevel="88"/>
+                        <SkillBar image={graphqlIcon} lang="GraphQL" skillLevel="88"/>
+                    </div> */}
+                </div>
             </div>
         );
     }
