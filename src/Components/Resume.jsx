@@ -53,22 +53,29 @@ class ProgrammingBox extends React.Component {
         return(
             <div className="programmingBox">
                 <b><p className="title">Languages and Frameworks</p></b>
-                <div className="programmingSkill">
-                    <div className="firstProgramming">
-                        <SkillBar image={javaIcon} lang="Java" skillLevel="88"/>
-                        <SkillBar image={javaScriptIcon} lang="Javascript" skillLevel="88"/>
-                        <SkillBar image={pythonIcon} lang="Python" skillLevel="88"/>
-                        <SkillBar image={swiftIcon} lang="Swift" skillLevel="88"/>
-                        <SkillBar image={htmlIcon} lang="HTML" skillLevel="88"/>
-                    </div>
-                    {/* <div className="secondProgramming">
-                        <SkillBar image={cssIcon} lang="CSS" skillLevel="88"/>
-                        <SkillBar image={reactIcon} lang="React.js" skillLevel="88"/>
-                        <SkillBar image={nodejsIcon} lang="Node.js" skillLevel="88"/>
-                        <SkillBar image={mysqlIcon} lang="mySQL" skillLevel="88"/>
-                        <SkillBar image={graphqlIcon} lang="GraphQL" skillLevel="88"/>
-                    </div> */}
-                </div>
+                <table className="programmingSkill">
+                    <tr>
+                        <td><SkillBar image={javaIcon} lang="Java" skillLevel="88"/></td>
+                        <td><SkillBar image={javaScriptIcon} lang="Javascript" skillLevel="88"/></td>
+                    </tr>
+                    <tr>
+                        <td><SkillBar image={pythonIcon} lang="Python" skillLevel="88"/></td>
+                        <td><SkillBar image={swiftIcon} lang="Swift" skillLevel="88"/></td>
+                    </tr>
+                    <tr>
+                        <td><SkillBar image={htmlIcon} lang="HTML" skillLevel="88" id="last"/></td>
+                        <td> <SkillBar image={cssIcon} lang="CSS" skillLevel="88"/></td>
+                    </tr>
+                    <tr>
+                        <td><SkillBar image={reactIcon} lang="React.js" skillLevel="88"/></td>
+                        <td><SkillBar image={nodejsIcon} lang="Node.js" skillLevel="88"/></td>
+                    </tr>
+                    <tr>
+                        <td><SkillBar image={mysqlIcon} lang="mySQL" skillLevel="88"/></td>
+                        <td><SkillBar image={graphqlIcon} lang="GraphQL" skillLevel="88"/></td>
+                    </tr>
+                </table>
+                <center><b><p id="otherSkills">Other Skills: Git, JQuery, Spring Boot, JSP, JUnit</p></b></center>
             </div>
         );
     }
