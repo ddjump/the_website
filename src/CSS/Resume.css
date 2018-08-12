@@ -87,6 +87,7 @@
     position: fixed;
     /* bottom: 2%; */
     top: 37%;
+    /* background: #F9F9F9; */
 }
 
 .programmingSkill {
@@ -95,7 +96,7 @@
     height: 75%;
     width: 95%;
     margin-top: 8%;
-    margin-left: 2%;
+    margin-left: 0;
 }
 
 .educationBox {
@@ -109,6 +110,7 @@
     left: 2%;
     position: fixed;
     top: 15%;
+    /* background: #F9F9F9; */
 }
 
 .schoolTitle {
@@ -144,10 +146,10 @@
 
 .workBox {
     /* background-color: #F4F4F4; */
-    border-style: solid;
+    /* border-style: solid;
     border-width: 3px;
     border-color: #C5C5C5;
-    border-radius: 25px;
+    border-radius: 25px; */
     width: 54%;
     height: 82%;
     bottom: 2%;
@@ -181,4 +183,42 @@
     
     /* text-align: center; */
     /* position: fixed; */
+}
+
+#vert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 10px;
+    position: relative;
+}
+
+.expBox {
+    /* border-style: solid; */
+    /* border-width: 3px; */
+    /* border-color: gray; */
+    font-family: 'Inconsolata', monospace;
+    height: 90%;
+    width: 95%;
+    margin-top: 5%;
+    margin-left: 3%;
+    line-height: 3px;
+    overflow: scroll;
+}
+
+#small {
+    font-size: 13px;
+    margin-left: 2%;
+}
+
+b {
+    font-size: 17px;
+}
+
+#date {
+    margin-right: 7px;
+    float: right;
+    color: darkgray;
 }
