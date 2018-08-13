@@ -55,7 +55,7 @@ class ProgrammingBox extends React.Component {
                         <td><SkillBar image={javaScriptIcon} lang="Javascript" skillLevel="4" color="red"/></td>
                     </tr>
                     <tr>
-                        <td><SkillBar image={pythonIcon} lang="Python" skillLevel="5" color="red"/></td>
+                        <td><SkillBar image={pythonIcon} lang="Python" skillLevel="4" color="red"/></td>
                         <td><SkillBar image={swiftIcon} lang="Swift" skillLevel="3" color="red"/></td>
                     </tr>
                     <tr>
@@ -130,17 +130,17 @@ class WorkExperience extends React.Component {
                     </div>
                     <br />
                     <div>
-                        <p><b>Nassau Community College</b><div id="date">Feb	2015	– May	2015</div></p>
-                        <p>Lab Assistant</p>
-                        <p id="small">•Helped out Professor set up equipment for lab sessions and lectures.</p>
-                        <p id="small">•Handled paper work for lab and storage.</p>
-                    </div>
-                    <br />
-                    <div>
                         <p><b>Sonic Drivein</b><div id="date">June	2015	– Jan	2016</div></p>
                         <p>Drinks/Ice Cream</p>
                         <p id="small">•Memorize all favors and ingredients by heart.</p>
                         <p id="small">•Need to produce shakes/drinks/ice cream as quick as possible.</p>
+                    </div>
+                    <br />
+                    <div>
+                        <p><b>Nassau Community College</b><div id="date">Feb	2015	– May	2015</div></p>
+                        <p>Lab Assistant</p>
+                        <p id="small">•Helped out Professor set up equipment for lab sessions and lectures.</p>
+                        <p id="small">•Handled paper work for lab and storage.</p>
                     </div>
                     <br />
                     <div>

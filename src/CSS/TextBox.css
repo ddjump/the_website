@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+/* @import url("https://fonts.googleapis.com/css?family=Rubik"); */
 
 #text {
     position: fixed;
@@ -7,6 +8,8 @@
     margin-top: -100px;
     margin-left: -200px;
     font-family: 'Permanent Marker';
+    /* font-family: 'Rubik', sans-serif; */
+    /* font-family: 'Inconsolata', monospace; */
     font-size: 25px;
     width: 25%;
     /* background-color:white; */
