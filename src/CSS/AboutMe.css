@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 .dot {
-    height: 100px;
-    width: 100px;
-    top: 10%;
-    left: 10%;
+    height: 120px;
+    width: 120px;
+    top: 16%;
+    left: 16%;
     position: fixed;
     background-color: white;
     border-style: solid;

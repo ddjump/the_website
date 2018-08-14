@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
 #resumeTitle {
-    margin-top: 2%;
+    margin-top: 1%;
+    font-size: 50px;
+    color: #5588FF;
+    color: royalblue;
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: 'Comfortaa', cursive; */
 }
 
 #arrow {
@@ -12,41 +19,62 @@
     background-color: white;
     border: none;
     color: #5588FF;
-    border-style: solid;
-    border-color:#5588FF;
-    border-width: 3px;
-    font-size: 25px;
-    height:  75px;
-    width: 22%;
+    color: royalblue;
+    /* border-style: solid; */
+    /* border-color:#5588FF; */
+    /* border-width: 3px; */
+    font-size: 40px;
+    height:  80px;
+    width: 25%;
     vertical-align: middle;
-    border-radius: 25px;
-    right: 2%;
-    top: 2%;
-    position: fixed;
+    border-radius: 10px;
+    /* right: 2%; */
+    margin-top: 1%;
+    /* position: fixed; */
     outline: 0;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Permanent Marker';
+    text-align: center;
+    /* font-family: 'Inconsolata', monospace; */
+}
+
+.btn:hover > #doc {
+    -webkit-filter: invert(100%);
+}
+
+.btn:hover {
+    background-color: #5588FF;
+    border: none;
+    color: white;
+    /* font-size: 16px; */
 }
 
 #doc {
     vertical-align: middle;
+    height: 45px;
+    width: 40px;
 }
 
 .title {
-    font-family: 'Inconsolata', monospace;
-    font-size: 22px;
+    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'Permanent Marker';
+    font-size: 25px;
     position: fixed;
     margin-left: 1%;
-    margin-top: 1%;
-    color: #5588FF;
+    margin-top: 0%;
+    /* color: #5588FF; */
+    color: royalblue;
 }
 
 .eduTitle {
-    font-family: 'Inconsolata', monospace;
-    font-size: 22px;
+    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'Permanent Marker';
+    font-size: 25px;
     position: fixed;
     margin-left: 1%;
-    margin-top: 1%;
-    color: #5588FF;
+    margin-top: 0%;
+    /* color: #5588FF; */
+    
+    color: royalblue;
 }
 
 #stony {
@@ -54,7 +82,7 @@
     width: 50px;
     position: fixed;
     margin-left: 2%;
-    margin-top: 4%;
+    margin-top: 3.5%;
     border-radius: 25px;
 }
 
@@ -67,20 +95,23 @@
 }
 
 .workTitle {
-    font-family: 'Inconsolata', monospace;
-    font-size: 22px;
+    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'Permanent Marker';
+    font-size: 25px;
     position: fixed;
     margin-left: 1%;
-    margin-top: 1%;
-    color: #5588FF;
+    margin-top: 0;
+    /* color: black; */
+    color: royalblue;
+    text-align: center;
 }
 
 .programmingBox {
     /* background-color: #F4F4F4; */
     border-style: solid;
     border-width: 3px;
-    border-color: #C5C5C5;
-    border-radius: 25px;
+    border-color: #5588FF;
+    border-radius: 10px;
     width: 40%;
     height: 60%;
     left: 2%;
@@ -103,8 +134,8 @@
     font-family: 'Inconsolata', monospace;
     border-style: solid;
     border-width: 3px;
-    border-color: #C5C5C5;
-    border-radius: 25px;
+    border-color: #5588FF;
+    border-radius: 10px;
     width: 40%;
     height: 20%;
     left: 2%;
@@ -118,18 +149,21 @@
     margin-top: 4%;
     margin-left: 7%;
     font-size: 19px;
+    /* font-family: 'Kanit', sans-serif; */
+    /* font-family: 'Permanent Marker'; */
 }
 
 .schoolTitle2 {
     position: fixed;
     margin-top: 8%;
     margin-left: 8%;
+    /* font-family: 'Kanit', sans-serif; */
     font-size: 13px;
 }
 
 #schoolCourseWork {
     position: fixed;
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left: 28%;
     font-family: 'Inconsolata', monospace;
     font-size: 15px;
@@ -139,17 +173,26 @@
     border-style: solid;
     border-color: #5588FF;
     color: #5588FF;
-    border-radius: 25px;
+    /* color: black; */
+    /* border-color: black; */
+    border-radius: 10px;
     outline: 0;
     background-color: white;
 }
 
+#schoolCourseWork:hover {
+    background-color: #5588FF;
+    color: white;
+    border: none;
+    font-size: 17px;
+}
+
 .workBox {
     /* background-color: #F4F4F4; */
-    /* border-style: solid;
-    border-width: 3px;
-    border-color: #C5C5C5;
-    border-radius: 25px; */
+    /* border-style: solid; */
+    /* border-width: 3px; */
+    /* border-color: #5588FF; */
+    /* border-radius: 10px; */
     width: 54%;
     height: 82%;
     bottom: 2%;
@@ -169,7 +212,7 @@
 #otherSkills {
     font-family: 'Inconsolata', monospace;
     font-size: 15px;
-    font-style: oblique;
+    /* font-style: oblique; */
 }
 
 #bar {
@@ -198,8 +241,11 @@
 .expBox {
     /* border-style: solid; */
     /* border-width: 3px; */
-    /* border-color: gray; */
+    /* border-color: #5588FF; */
+    /* font-family: 'Comfortaa', cursive; */
     font-family: 'Inconsolata', monospace;
+    /* font-family: 'Kanit', sans-serif; */
+    /* font-family: 'Corben', cursive; */
     height: 90%;
     width: 95%;
     margin-top: 5%;
@@ -209,8 +255,14 @@
 }
 
 #small {
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 2%;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
 }
 
 b {
