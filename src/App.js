@@ -31,8 +31,9 @@ class App extends Component {
         <TextBox />
         <input id="textField" value={this.state.backgroundColor} onChange={this.changeColor.bind(this)}/>
         <Link to="/resume"><button id="resume" className="resumeButton">Resume</button></Link>
+        <Link to="/projects"><button id="projects" className="projectsButton"><div id="projectText">Projects</div></button></Link>
+        <div id="tri">☆</div>
         <AboutMe />
-
       </div>
     );
   }

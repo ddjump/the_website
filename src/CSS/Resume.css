@@ -1,277 +1,149 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit');
 
-#resumeTitle {
-    margin-top: 1%;
-    font-size: 50px;
-    color: #5588FF;
-    color: royalblue;
-    /* font-family: 'Inconsolata', monospace; */
-    /* font-family: 'Comfortaa', cursive; */
+.resumePage {
+    height: 100%;
 }
 
 #arrow {
     top: 2%;
-    left: 1%;
+    left: 2%;
     position: fixed;
+    height: 50px;
+    width: 50px;
 }
 
 .btn {
     background-color: white;
     border: none;
-    color: #5588FF;
-    color: royalblue;
-    /* border-style: solid; */
-    /* border-color:#5588FF; */
-    /* border-width: 3px; */
+    color: rgb(71, 115, 251);
     font-size: 40px;
     height:  80px;
     width: 25%;
     vertical-align: middle;
     border-radius: 10px;
-    /* right: 2%; */
-    margin-top: 1%;
-    /* position: fixed; */
+    margin-top: 3%;
     outline: 0;
     font-family: 'Permanent Marker';
     text-align: center;
-    /* font-family: 'Inconsolata', monospace; */
+}
+
+#doc {
+    vertical-align: middle;
+    height: 35px;
+    width: 30px;
+    margin-right: 1%;
 }
 
 .btn:hover > #doc {
-    -webkit-filter: invert(100%);
+    filter: brightness(0) invert(1);
 }
 
 .btn:hover {
     background-color: #5588FF;
     border: none;
     color: white;
-    /* font-size: 16px; */
 }
 
-#doc {
-    vertical-align: middle;
-    height: 45px;
-    width: 40px;
-}
-
-.title {
-    /* font-family: 'Inconsolata', monospace; */
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    position: fixed;
-    margin-left: 1%;
-    margin-top: 0%;
-    /* color: #5588FF; */
-    color: royalblue;
-}
-
-.eduTitle {
-    /* font-family: 'Inconsolata', monospace; */
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    position: fixed;
-    margin-left: 1%;
-    margin-top: 0%;
-    /* color: #5588FF; */
-    
-    color: royalblue;
-}
-
-#stony {
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    margin-left: 2%;
-    margin-top: 3.5%;
-    border-radius: 25px;
-}
-
-#syosset {
-    height: 50px;
-    width: 70px;
-    position: fixed;
-    margin-left: 1.5%;
-    margin-top: 12%;
-}
-
-.workTitle {
-    /* font-family: 'Inconsolata', monospace; */
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    position: fixed;
-    margin-left: 1%;
-    margin-top: 0;
-    /* color: black; */
-    color: royalblue;
-    text-align: center;
-}
-
-.programmingBox {
-    /* background-color: #F4F4F4; */
-    border-style: solid;
-    border-width: 3px;
-    border-color: #5588FF;
-    border-radius: 10px;
-    width: 40%;
-    height: 60%;
-    left: 2%;
-    position: fixed;
-    /* bottom: 2%; */
-    top: 37%;
-    /* background: #F9F9F9; */
-}
-
-.programmingSkill {
-    /* border-width: 1px;
-    border-style: solid; */
-    height: 75%;
-    width: 95%;
-    margin-top: 8%;
-    margin-left: 0;
-}
-
-.educationBox {
-    font-family: 'Inconsolata', monospace;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #5588FF;
-    border-radius: 10px;
-    width: 40%;
-    height: 20%;
-    left: 2%;
-    position: fixed;
-    top: 15%;
-    /* background: #F9F9F9; */
-}
-
-.schoolTitle {
-    position: fixed;
-    margin-top: 4%;
-    margin-left: 7%;
-    font-size: 19px;
-    /* font-family: 'Kanit', sans-serif; */
-    /* font-family: 'Permanent Marker'; */
-}
-
-.schoolTitle2 {
-    position: fixed;
-    margin-top: 8%;
-    margin-left: 8%;
-    /* font-family: 'Kanit', sans-serif; */
-    font-size: 13px;
-}
-
-#schoolCourseWork {
-    position: fixed;
-    margin-top: 4%;
-    margin-left: 28%;
-    font-family: 'Inconsolata', monospace;
-    font-size: 15px;
-    width: 10%;
-    height: 5%;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #5588FF;
-    color: #5588FF;
-    /* color: black; */
-    /* border-color: black; */
-    border-radius: 10px;
-    outline: 0;
-    background-color: white;
-}
-
-#schoolCourseWork:hover {
-    background-color: #5588FF;
+#title {
     color: white;
-    border: none;
-    font-size: 17px;
+    font-size: 20px;
+    font-family: 'Permanent Marker';
 }
 
-.workBox {
-    /* background-color: #F4F4F4; */
+.container {
+    height: 0;
+    padding-bottom: 35%;
+    width: 35%;
+    margin: 5% auto 0 auto;
     /* border-style: solid; */
-    /* border-width: 3px; */
-    /* border-color: #5588FF; */
-    /* border-radius: 10px; */
-    width: 54%;
-    height: 82%;
-    bottom: 2%;
-    right: 2%;
-    position: fixed;
-    top: 15%;
-}
-
-.icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: auto;
-    padding-bottom: 5%;
+    /* border-width: 2px; */
+    /* border-color: royalblue; */
     position: relative;
 }
 
-#otherSkills {
-    font-family: 'Inconsolata', monospace;
-    font-size: 15px;
-    /* font-style: oblique; */
-}
-
-#bar {
-    font-family: 'Inconsolata', monospace;
-    vertical-align: baseline;
-
-    /* position: absolute; */
-    /* margin-top: 0%; */
-    /* display: flex;
-  align-items: center; */
-    
-    /* text-align: center; */
-    /* position: fixed; */
-}
-
-#vert {
+.eduPanel {
+    height: 33%;
+    width: 33%;
+    background-color:#0559FF;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    vertical-align: middle;
+    border-radius: 10px;
+    animation-name: shake;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    outline: 0;
+}
+
+@keyframes shake {
+    10%  { transform: translateX(1px);  }
+    20%  { transform: translateX(-2px);  }
+    30%  { transform: translateY(-1px); }
+    40%  { transform: translateY(1px);  }
+    50%  { transform: translateX(1px);  }
+    60%  { transform: translateX(-2px);  }
+    70%  { transform: translateY(-1px); }
+    80%  { transform: translateY(1px);  }
+    90%  { transform: translateX(1px);  }
+    100% { transform: translateX(0);    }
+} 
+
+.skillPanel {
+    /* height: 281.6px; */
+    height: 65%;
+    width: 33%;
+    background-color:#4D89FF;
     text-align: center;
-    margin-left: 10px;
-    position: relative;
+    bottom: 0%;
+    left: 0%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    /* border-radius: 10px; */
+    /* animation-name: shake;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    outline: 0; */
 }
 
-.expBox {
-    /* border-style: solid; */
-    /* border-width: 3px; */
-    /* border-color: #5588FF; */
-    /* font-family: 'Comfortaa', cursive; */
-    font-family: 'Inconsolata', monospace;
-    /* font-family: 'Kanit', sans-serif; */
-    /* font-family: 'Corben', cursive; */
-    height: 90%;
-    width: 95%;
-    margin-top: 5%;
-    margin-left: 3%;
-    line-height: 3px;
-    overflow: scroll;
+.workPanel {
+    height: 70%;
+    width: 65%;
+    background-color:#2B6CED;
+    text-align: center;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* animation-name: shake;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    outline: 0; */
 }
 
-#small {
-    font-size: 15px;
-    margin-left: 2%;
-    /* white-space: nowrap; */
-    text-overflow: ellipsis;
-
-  /* Required for text-overflow to do anything */
-  /* white-space: nowrap; */
-  /* overflow: hidden; */
-}
-
-b {
-    font-size: 17px;
-}
-
-#date {
-    margin-right: 7px;
-    float: right;
-    color: darkgray;
-    /* color: black; */
+.personalPanel {
+    height: 28%;
+    width: 65%;
+    background-color:#174DB8;
+    text-align: center;
+    bottom: 0%;
+    right: 0%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    /* border-radius: 10px; */
+    /* animation-name: shake;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    outline: 0; */
 }
