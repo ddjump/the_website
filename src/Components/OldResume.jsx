@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import arrow from '../Images/arrow.png';
 import '../CSS/OldResume.css';
-import docIcon from '../Images/document.png';
+import docIcon from '../Images/docIcon.png';
 import ResumeDoc from '../Images/Resume.pdf';
 import stonyIcon from '../Images/stonyBrookIcon.png';
 import SkillBar from '../ReuseComponent/SkillBar.jsx';

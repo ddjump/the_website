@@ -9,4 +9,36 @@
 
 .tabSpace {
     margin-left: 9px;
-  }
+}
+
+#doc {
+    vertical-align: middle;
+    height: 35px;
+    width: 30px;
+    margin-right: 1%;
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    color: rgb(71, 115, 251);
+    font-size: 40px;
+    height:  80px;
+    width: 25%;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin-top: 3%;
+    outline: 0;
+    font-family: 'Permanent Marker';
+    text-align: center;
+}
+
+.btn:hover > #doc {
+    filter: brightness(0) invert(1);
+}
+
+.btn:hover {
+    background-color: #5588FF;
+    border: none;
+    color: white;
+}

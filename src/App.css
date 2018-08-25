@@ -1,28 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-} */
-
-
 input {
   background:none;
   border:0;
@@ -45,6 +20,7 @@ input {
   width: 120px;
   top: 16%;
   right: 16%;
+  border-radius: 10px;
   position: fixed;
   background-color: white;
   border-style: solid;
@@ -54,12 +30,26 @@ input {
   font-family: 'Permanent Marker';
   font-weight:bold;
   font-size:1.0em;
-  animation-name: tilt;
+  animation-name: bounce;
   /* transform-origin: middle bottom; */
   animation-duration: 4s;
   animation-iteration-count:infinite;
   outline: 0;
 }
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+	40% {
+    transform: translateY(-30px);
+  }
+	60% {
+    transform: translateY(-15px);
+  }
+}
+
+
 
 @keyframes tilt {
   25% { transform: rotate(10deg); }
@@ -75,34 +65,82 @@ input {
   border: none;
 }
 
-  /* color: #FF5B5B; */
+#projects {
+  background-color: white;
+  width: 120px;
+  height: 120px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FF5B5B;
+  transform: rotate(45deg);
+  font-family: 'Permanent Marker';
+  font-weight:bold;
+  font-size:1.0em;
+  bottom: 16%;
+  left: 16%;
+  position: fixed;
+  outline: 0;
+  display: inline-block;
+  animation-name: backAndForth;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  outline: 0;
+  animation-fill-mode: forwards;
+}
 
-  #projects {
-    width: 120px;
-    height: 120px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #FF5B5B;
-    transform: rotate(45deg);
-    font-family: 'Permanent Marker';
-    font-weight:bold;
-    font-size:1.0em;
-    bottom: 16%;
-    left: 16%;
-    position: fixed;
-    outline: 0;
-    display: inline-block;
-  }
+#projectText {
+  transform: rotate(-45deg);
+}
 
-  #projectText {
-    transform: rotate(-45deg);
-  }
+#projects:hover {
+  animation: stop;
+  background-color: black;
+  color: white;
+  border: none;
+}
 
-  #tri {
-    font-size: 150px;
-    color: #FF5B5B;
-    /* color: white; */
-    position: fixed;
-    top: 30%;
-    left: 16%;
-  }
+@keyframes backAndForth {
+    0%  { transform: rotate(45deg); }
+    25% { transform: rotate(30deg); }
+    50% { transform: rotate(45deg); }
+    75% { transform: rotate(60deg); }
+    100% { transform: rotate(45deg); }
+} 
+
+.triContainer {
+  position: fixed;
+  right: 13%;
+  bottom: 16%;
+}
+
+.triangle {
+  position: relative;
+  width:0;
+  /* bottom: -65%; */
+  /* right: -73%; */
+  border-bottom:solid 150px limegreen;
+  border-right:solid 90px transparent;
+  border-left:solid 90px transparent;
+}
+.triangle .empty {
+  position: absolute;
+  top:10px;
+  left:-80px;
+  width:0;
+  border-bottom:solid 135px white;
+  border-right:solid 80px transparent;
+  border-left:solid 80px transparent;
+}
+
+#contactTitle {
+  font-family: 'Permanent Marker';
+  font-size:1.0em;
+  position: fixed;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center */
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  margin-right: -50%;
+}
