@@ -15,10 +15,7 @@
     height: 0;
     padding-bottom: 35%;
     width: 35%;
-    margin: 5% auto 0 auto;
-    /* border-style: solid;
-    border-width: 2px;
-    border-color: royalblue; */
+    margin: 3% auto 0 auto;
     position: relative;
 }
 
@@ -40,8 +37,7 @@
     outline: 0;
 }
 
-#Skills {
-    /* height: 281.6px; */
+#Work_Experience {
     height: 65%;
     width: 33%;
     background-color:#97BAFF;
@@ -56,17 +52,9 @@
     color: white;
     font-size: 20px;
     font-family: 'Permanent Marker';
-    /* border-radius: 10px; */
-    /* animation-name: shake;
-    animation-duration: 8s;
-    animation-iteration-count:infinite;
-    outline: 0; */
-    /* -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-         box-shadow: 0 8px 6px -6px black; */
 }
 
-#Work_Experience {
+#Skills {
     height: 70%;
     width: 65%;
     background-color:#2B6CED;
@@ -81,11 +69,6 @@
     color: white;
     font-size: 20px;
     font-family: 'Permanent Marker';
-    /* animation-name: shake;
-    animation-duration: 8s;
-    animation-iteration-count:infinite;
-    outline: 0; */
-    
 }
 
 #Personal {
@@ -103,11 +86,6 @@
     color: white;
     font-size: 20px;
     font-family: 'Permanent Marker';
-    /* border-radius: 10px; */
-    /* animation-name: shake;
-    animation-duration: 8s;
-    animation-iteration-count:infinite;
-    outline: 0; */
 }
 
 #Education:hover, #Skills:hover, #Work_Experience:hover, #Personal:hover {
@@ -116,20 +94,6 @@
     animation-iteration-count:infinite; 
 }
 
-/* .move {
-    animation: slideIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-  }
-  
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translate3d(-20rem, 0, 500rem);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  } */
 
 @keyframes smaller {
     100%{transform: scale()}

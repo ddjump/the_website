@@ -1,0 +1,61 @@
+
+#skillsPanel {
+    width: 500px;
+    height: 500px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    position: absolute;
+    right: 68%;
+    border-color: steelblue;
+}
+
+#content {
+    font-family: 'Inconsolata', monospace;
+    /* padding-top: 2%;
+    padding-left: 3%; */
+}
+
+#title {
+    font-family: 'Permanent Marker';
+    color: steelblue;
+    font-size: 17px;
+    /* position: absolute; */
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#vert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 10px;
+    position: relative;
+    height: 70px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: auto;
+    padding-bottom: 10%;
+    position: relative;
+}
+
+.programmingSkill {
+    /* border-width: 1px;
+    border-style: solid; */
+    height: 75%;
+    width: 95%;
+    margin-top: 0%;
+    margin-left: 0;
+}
+
+#otherSkills {
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    bottom: 10%;
+    /* font-style: oblique; */
+}

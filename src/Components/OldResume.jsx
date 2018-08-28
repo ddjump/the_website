@@ -51,7 +51,7 @@ class ProgrammingBox extends React.Component {
                 <b><p className="title">Languages and Frameworks</p></b>
                 <table className="programmingSkill">
                     <tr>
-                        <td><SkillBar image={javaIcon} lang="Java" skillLevel="5" color="#F83800" id="one"/></td>
+                        <td><SkillBar image={javaIcon} lang="Java" skillLevel="5" color="#F83800"/></td>
                         <td><SkillBar image={javaScriptIcon} lang="Javascript" skillLevel="4" color="#F83800"/></td>
                     </tr>
                     <tr>

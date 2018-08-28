@@ -4,6 +4,8 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import '../CSS/Resume.css';
 import arrow from '../Images/arrow2.png';
 import IconButton from '../ReuseComponent/IconButton.jsx';
+import EducationPanel from './panels/EducationPanel.jsx';
+import SkillsPanel from './panels/SkillsPanel.jsx';
 
 class Resume extends React.Component {
     constructor(props) {
@@ -17,22 +19,29 @@ class Resume extends React.Component {
 
     handleClick(i) {
         if(!this.state.optionOpen) {
-            // const array = this.state.options;
             const clicked = this.state.options[i];
             this.setState({optionClicked: clicked, options: [clicked], optionOpen: true});
-            console.log(this.state.optionClicked);
         } else {
-            console.log("im on else")
             this.clickBack();
+            
         }
     }
 
     clickBack() {
-        this.setState({options: ["Education", "Skills", "Work Experience", "Personal"], optionOpen: false});
+        this.setState({options: ["Education", "Work Experience", "Skills", "Personal"], optionOpen: false});
+        this.setState({optionOpen: false, optionClicked: ""});
     }
  
     render() {
+
         const panels = this.state.options.map((option, i) => <Panel title={option} key={option} onClick={() => this.handleClick(i)}/>);
+        var option = null;
+        if(this.state.optionOpen) {
+            option = <Option clicked={this.state.optionClicked} appear={this.state.optionOpen}/>
+        } else {
+            option = null;
+        }
+
         return(
             <div className="resumePage">
                 <Link to="/"><img alt="arrow" id="arrow" src={ arrow }/></Link>
@@ -43,9 +52,9 @@ class Resume extends React.Component {
                         transitionEnterTimeout={500}
                         transitionLeaveTimeout={300}>
                         {panels}
+                        {option}
                     </ReactCSSTransitionGroup>
                 </div>
-                <button onClick={this.clickBack.bind(this)}>click me</button>
             </div>
         );
     }
@@ -71,6 +80,47 @@ class Panel extends React.Component {
         return(
             <div id={styleClass} onClick={this.handleClick.bind(this)}>
                 <center><p className="title">{this.props.title}</p></center>
+            </div>
+        );
+    }
+}
+
+class Option extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            option: this.props.clicked,
+            open: this.props.appear
+        }
+    }
+
+    render() {
+        var display = null;
+        const option = this.state.option;
+
+        if(this.state.open) {
+            console.log(option);
+            switch(option) {
+                case 'Education':
+                    display = <EducationPanel />;
+                    break;
+                case 'Skills':
+                    display = <SkillsPanel />;
+                    break;
+                case 'Work Experience':
+                    display = null;
+                    break;
+                case 'Personal':
+                    display = null;
+                    break;
+                default:
+                    display = null;
+            }
+        }
+
+        return(
+            <div>
+                {display}
             </div>
         );
     }

@@ -144,3 +144,10 @@ input {
   left: 25%;
   margin-right: -50%;
 }
+
+.resumeButton:hover {
+  animation: stop;
+  background-color: black;
+  color: white;
+  border: none;
+}
