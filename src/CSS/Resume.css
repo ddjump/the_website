@@ -3,6 +3,17 @@
     height: 100%;
 }
 
+#resume {
+    color: #5588FF;
+    font-size: 40px;
+    height:  80px;
+    width: 25%;
+    vertical-align: middle;
+    margin-top: 1%;
+    font-family: 'Permanent Marker';
+    text-align: center;
+}
+
 #arrow {
     top: 2%;
     left: 2%;

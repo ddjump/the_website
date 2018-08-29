@@ -7,7 +7,7 @@
     border-radius: 10px;
     position: absolute;
     right: 68%;
-    border-color: steelblue;
+    border-color: blue;
 }
 
 #content {
@@ -18,8 +18,9 @@
 
 #title {
     font-family: 'Permanent Marker';
-    color: steelblue;
-    font-size: 17px;
+    /* color: steelblue; */
+    color: royalblue;
+    font-size: 18px;
     /* position: absolute; */
     margin-top: 2%;
     margin-left: 2%;
@@ -37,10 +38,10 @@
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: auto;
-    padding-bottom: 10%;
+    width: 45px;
+    height: 45px;
+    /* margin-bottom: auto; */
+    /* padding-bottom: 0%; */
     position: relative;
 }
 

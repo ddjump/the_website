@@ -15,7 +15,7 @@ class SkillBar extends React.Component {
             } else {
                 circleColor = "#D9D9D9";
             }
-            arrCircle.push(<Circle color={circleColor}/>)
+            arrCircle.push(<Circle color={circleColor} key={i}/>)
         }
 
         return(

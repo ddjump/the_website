@@ -60,7 +60,7 @@ input {
 
 .resumeButton:hover {
   animation: stop;
-  background-color: black;
+  background-color: #5588FF;
   color: white;
   border: none;
 }
@@ -94,7 +94,7 @@ input {
 
 #projects:hover {
   animation: stop;
-  background-color: black;
+  background-color: #FF5B5B;
   color: white;
   border: none;
 }
@@ -116,20 +116,30 @@ input {
 .triangle {
   position: relative;
   width:0;
+  /* border-radius: 10%; */
   /* bottom: -65%; */
   /* right: -73%; */
   border-bottom:solid 150px limegreen;
   border-right:solid 90px transparent;
   border-left:solid 90px transparent;
 }
+
 .triangle .empty {
   position: absolute;
-  top:10px;
+  top: 10px;
   left:-80px;
   width:0;
   border-bottom:solid 135px white;
   border-right:solid 80px transparent;
   border-left:solid 80px transparent;
+}
+
+.triContainer:hover > .triangle > .empty {
+  border-bottom:solid 135px limegreen;
+}
+
+.triContainer:hover > #contactTitle {
+  color: white;
 }
 
 #contactTitle {
@@ -145,9 +155,4 @@ input {
   margin-right: -50%;
 }
 
-.resumeButton:hover {
-  animation: stop;
-  background-color: black;
-  color: white;
-  border: none;
-}
+

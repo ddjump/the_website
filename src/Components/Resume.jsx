@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import '../CSS/Resume.css';
 import arrow from '../Images/arrow2.png';
-import IconButton from '../ReuseComponent/IconButton.jsx';
+// import IconButton from '../ReuseComponent/IconButton.jsx';
 import EducationPanel from './panels/EducationPanel.jsx';
 import SkillsPanel from './panels/SkillsPanel.jsx';
+import WorkPanel from './panels/WorkPanel.jsx';
 
 class Resume extends React.Component {
     constructor(props) {
@@ -18,6 +19,7 @@ class Resume extends React.Component {
     }
 
     handleClick(i) {
+        console.log(this.state.options[i]);
         if(!this.state.optionOpen) {
             const clicked = this.state.options[i];
             this.setState({optionClicked: clicked, options: [clicked], optionOpen: true});
@@ -28,7 +30,7 @@ class Resume extends React.Component {
     }
 
     clickBack() {
-        this.setState({options: ["Education", "Work Experience", "Skills", "Personal"], optionOpen: false});
+        this.setState({options: ["Education", "Skills", "Work Experience", "Personal"], optionOpen: false});
         this.setState({optionOpen: false, optionClicked: ""});
     }
  
@@ -45,7 +47,7 @@ class Resume extends React.Component {
         return(
             <div className="resumePage">
                 <Link to="/"><img alt="arrow" id="arrow" src={ arrow }/></Link>
-                <center><IconButton /></center>
+                <center><h1 id="resume">Resume</h1></center>
                 <div className="container">
                     <ReactCSSTransitionGroup
                         transitionName="example"
@@ -108,7 +110,7 @@ class Option extends React.Component {
                     display = <SkillsPanel />;
                     break;
                 case 'Work Experience':
-                    display = null;
+                    display = <WorkPanel />;
                     break;
                 case 'Personal':
                     display = null;

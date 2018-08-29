@@ -8,7 +8,7 @@
 }
 
 .tabSpace {
-    margin-left: 9px;
+    margin-left: 4px;
 }
 
 #doc {
@@ -41,4 +41,8 @@
     background-color: #5588FF;
     border: none;
     color: white;
+}
+
+#spaceHeight {
+    height: 10px;
 }

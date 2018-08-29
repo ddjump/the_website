@@ -39,7 +39,7 @@
 
 .dot:hover {
     animation: stop;
-    background-color: black;
+    background-color: #FD9C6D;
     color: white;
     border: none;
 }
