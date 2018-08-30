@@ -31,16 +31,16 @@ class AboutMeWindow extends React.Component {
     render() {
         return(
             <div className='popup'>
-                <div className='popup_inner'>
-                    <center><h1>About Me</h1></center>
+                <div id="aboutMeTitle">About Me</div>
+                {/* <div className='popup_inner'>
                     <div className="aboutMeP">
                         <div className='aboutMeText'>
-                            <p><TabSpace />I am currently a senior majoring in <b>Computer Science</b> at <b>Stony Brook University</b>. My area of interest lies in <b>Web Development</b>, <b>Mobile Development</b>, and also <b>Data Science</b>. I spent most of my time coding, playing sports(<span role='img' aria-label="Close">🏀 and 🎾</span>), and drawing. Oh! I am also a big fan of Korean Fried Chicken!<span role='img' aria-label="Close">🍗🍗</span></p>
+                            <p><TabSpace />I am graduated at <b>Stony Brook University</b> in summer of 2018 with a <b>Computer Science</b> degree. My area of interest lies in <b>Web Development</b>, <b>Mobile Development</b>, and also <b>Data Science</b>. I spent most of my time coding, playing sports(<span role='img' aria-label="Close">🏀 and 🎾</span>), and drawing. Oh! I am also a big fan of Korean Fried Chicken!<span role='img' aria-label="Close">🍗🍗</span></p>
                         </div>
                     </div>
                     <img alt="close" id="closeButton" src={close} onClick={this.props.toggleWindow}/>
-                    {/* <img alt="profile" id="profile" src={profile} /> */}
-                </div>
+                </div> */}
+                <div id="exit" onClick={this.props.toggleWindow}>Exit</div>
             </div>
         );
     }

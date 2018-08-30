@@ -82,7 +82,7 @@
     font-family: 'Permanent Marker';
 }
 
-#Personal {
+#Download {
     height: 28%;
     width: 65%;
     background-color:#174DB8;
@@ -99,7 +99,7 @@
     font-family: 'Permanent Marker';
 }
 
-#Education:hover, #Skills:hover, #Work_Experience:hover, #Personal:hover {
+#Education:hover, #Skills:hover, #Work_Experience:hover, #Download:hover {
     animation-name: shake;
     animation-duration: 0.5s;
     animation-iteration-count:infinite; 

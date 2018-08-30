@@ -59,7 +59,8 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    background-color: rgba(0,0,0, 0.5);
+    /* background-color: rgba(0,0,0, 0.5); */
+    background-color: white;
   }
 
   .popup_inner {
@@ -96,7 +97,7 @@
 
   .aboutMeText {
     font-family: 'Inconsolata', monospace;
-    font-size: 20px;
+    font-size: 15px;
     /* text-align: center; */
     width: 50%;
     /* vertical-align: middle; */
@@ -107,12 +108,59 @@
 
   b {
     /* color: white; */
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .tabSpace {
     margin-left: 40px;
   }
+
+#aboutMeTitle {
+  height: 130px;
+  width: 130px;
+  top: 13%;
+  right: 25%;
+  position: fixed;
+  background-color: white;
+  border-style: solid;
+  border-color: #FD9C6D;
+  border-width: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  font-family: 'Permanent Marker';
+  font-weight:bold;
+  font-size:1.0em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#exit {
+  height: 130px;
+  width: 130px;
+  bottom: 13%;
+  left: 25%;
+  position: fixed;
+  background-color: white;
+  border-style: solid;
+  border-color: #FD9C6D;
+  border-width: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  font-family: 'Permanent Marker';
+  font-weight:bold;
+  font-size:25px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#exit:hover {
+  background-color: #FD9C6D;
+  color: white;
+}
 
   /* #profile {
     position: fixed;

@@ -13,13 +13,16 @@ class Resume extends React.Component {
         super(props);
         this.state = {
             optionOpen: false,
-            options: ["Education", "Skills", "Work Experience", "Personal"],
+            options: ["Education", "Skills", "Work Experience", "Download"],
             optionClicked: ""
         }
     }
 
     handleClick(i) {
-        console.log(this.state.options[i]);
+        if(i === 3) {
+            return;
+        }
+
         if(!this.state.optionOpen) {
             const clicked = this.state.options[i];
             this.setState({optionClicked: clicked, options: [clicked], optionOpen: true});
@@ -30,7 +33,7 @@ class Resume extends React.Component {
     }
 
     clickBack() {
-        this.setState({options: ["Education", "Skills", "Work Experience", "Personal"], optionOpen: false});
+        this.setState({options: ["Education", "Skills", "Work Experience", "Download"], optionOpen: false});
         this.setState({optionOpen: false, optionClicked: ""});
     }
  
@@ -101,7 +104,6 @@ class Option extends React.Component {
         const option = this.state.option;
 
         if(this.state.open) {
-            console.log(option);
             switch(option) {
                 case 'Education':
                     display = <EducationPanel />;
