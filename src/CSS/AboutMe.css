@@ -44,12 +44,6 @@
     border: none;
 }
 
-#closeButton {
-    top: 8%;
-    right: 7%;
-    position: fixed;
-}
-
 .popup {
     position: fixed;
     width: 100%;
@@ -65,15 +59,36 @@
 
   .popup_inner {
     position: absolute;
-    left: 5%;
-    right: 5%;
-    top: 5%;
-    bottom: 5%;
-    height: 90%;
-    width: 90%;
+    left: 0%;
+    top: 0%;
+    height: 450px;
+    width: 450px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: #FD9C6D;
     margin: auto;
     background: white;
-    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popup_inner2 {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 350px;
+    width: 350px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: #FD9C6D;
+    margin: auto;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   h1 {
@@ -82,33 +97,40 @@
     margin-top: 5%;
   }
 
-  .aboutMeP {
-    /* position: fixed; */
-    /* vertical-align: center; */
-    border-radius: 50%;
-    /* color: white; */
-    /* background: black; */
-    /* padding: 70px 0; */
-    text-align: center;
-    width: 39%;
-    top: 30%;
-    height: 39%;
-  }
-
   .aboutMeText {
     font-family: 'Inconsolata', monospace;
     font-size: 15px;
     /* text-align: center; */
-    width: 50%;
-    /* vertical-align: middle; */
+    width: 80%;
+    height: 80%;
+    vertical-align: middle;
     display: inline-block;
-    position: fixed;
     line-height: 35px; 
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
+  .aboutMeText2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 13px;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    /* vertical-align: middle; */
+    /* display: inline-block; */
+    line-height: 20px; 
+    /* padding: 10px; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  }
+
+
   b {
-    /* color: white; */
-    font-size: 25px;
+    color: black;
+    font-size: 50px;
   }
 
   .tabSpace {
@@ -118,7 +140,7 @@
 #aboutMeTitle {
   height: 130px;
   width: 130px;
-  top: 13%;
+  top: 5%;
   right: 25%;
   position: fixed;
   background-color: white;
@@ -139,8 +161,8 @@
 #exit {
   height: 130px;
   width: 130px;
-  bottom: 13%;
-  left: 25%;
+  bottom: 0%;
+  left: 30%;
   position: fixed;
   background-color: white;
   border-style: solid;
@@ -162,11 +184,76 @@
   color: white;
 }
 
-  /* #profile {
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    width: 45%;
-    height: 45%;
-    transform: rotate(90deg);
-  } */
+.bubble {
+  font-size: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #FD9C6D;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tennis {
+  bottom: 5%;
+  right: 43%;
+  width: 45px;
+  height: 45px;
+}
+
+#friedChicken {
+  top: 30%;
+  right: 33%;
+  width: 60px;
+  height: 60px;
+}
+
+#bball {
+  bottom: 20%;
+  right: 46%;
+  width: 63px;
+  height: 63px;
+}
+
+#laptop {
+  top: 26%;
+  right: 20%;
+  width: 60px;
+  height: 60px;
+}
+
+#game {
+  bottom: 13%;
+  left: 22%;
+  width: 40px;
+  height: 40px;
+}
+
+#tv {
+  top: 5%;
+  right: 42.5%;
+  width: 50px;
+  height: 50px;
+}
+
+.bubble:hover {
+  background-color: #FD9C6D;
+  font-size: 30px;
+  transform: scale(1.2);
+}
+
+#boxxx {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background-color: white;
+  z-index: 100;
+
+  height: 600px;
+  margin-top: -300px;
+
+  width: 800px;
+  margin-left: -400px;
+}
