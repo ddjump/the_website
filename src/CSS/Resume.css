@@ -9,18 +9,27 @@
     height:  80px;
     width: 25%;
     vertical-align: middle;
-    margin-top: 1%;
+    margin-top: 2%;
     font-family: 'Permanent Marker';
     text-align: center;
 }
 
 #arrow {
     top: 2%;
-    left: 2%;
+    left: 3%;
     position: fixed;
     height: 50px;
     width: 50px;
 }
+
+#arrow:hover {
+    transform: scale(1.1);
+}
+
+/* #arrow:hover {
+    height: 60px;
+    width: 60px;
+} */
 
 .container {
     height: 0;
