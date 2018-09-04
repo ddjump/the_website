@@ -36,7 +36,7 @@
     background-color: white;
     z-index: 100;
 
-    border-style: solid;
+    /* border-style: solid; */
   
     height: 200px;
     margin-top: -100px;
@@ -54,7 +54,7 @@
     left: 50%;
     top: 75%;
     /* background-color: rgba(255, 0, 0, 1); */
-    background-color: crimson;
+    background-color: #FFC2C0;
     
     z-index: 100;
 
@@ -64,11 +64,31 @@
     height: 250px;
     margin-top: -125px;
   
-    width: 800px;
-    margin-left: -400px;
-    color: white;
+    width: 900px;
+    margin-left: -450px;
+    color: black;
 }
 
 #diamond {
-    margin-left: 30px;
+    margin-left: 20px;
+    height: 190px;
+    width: 150px;
+    /* animation: rotate 10s ease-in-out infinite; */
 }
+
+#diamond:hover {
+    transform: scale(1.3);
+    
+}
+
+@keyframes rotate {
+    0% { transform: rotateX(0)}
+    12.5% { transform: rotateY(90deg)}
+    25% { transform: rotateY(270deg)}
+    37.5% { transform: rotateY(270deg)}
+    50% { transform: rotateY(360deg)}
+    62.5% { transform: rotateX(90deg)}
+    75% { transform: rotateX(180deg)}
+    87.5% { transform: rotateX(270deg)}
+    100% { transform: rotateX(360deg)}
+  }

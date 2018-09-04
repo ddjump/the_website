@@ -1,20 +1,17 @@
 import React from 'react';
 import '../../CSS/Projects.css';
-import diamond from '../../Images/diamond.png';
-import diamondFilled from '../../Images/diamondFilled.png';
+import diamond from '../../Images/theDiamond.png';
+import diamondFilled from '../../Images/filledDiamond.png';
 
 class Diamond extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            clicked: this.props.clicked
-        }
         this.handClick = this.props.onClick
     }
 
     render() {
         var icon = null;
-        if(this.state.clicked === "true") {
+        if(this.props.clicked === "true") {
             icon = diamondFilled;
         } else {
             icon = diamond;
