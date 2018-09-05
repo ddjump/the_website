@@ -6,34 +6,34 @@ import BBall from './bubble/BBall.jsx';
 import Laptop from './bubble/Laptop.jsx';
 import Fried from './bubble/Fried.jsx';
 import TV from './bubble/TV.jsx';
-// import close from '../Images/close.png';
+import { Link } from 'react-router-dom';
 import Dan from '../Images/danYen.jpg'
 
-class AboutMe extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            toggle: false
-        }
-    }
+// class AboutMe extends React.Component {
+//     constructor(props) {
+//         super(props)
+//         this.state = {
+//             toggle: false
+//         }
+//     }
 
-    toggle() {
-        this.setState({
-            toggle: !this.state.toggle
-        });
-    }
+//     toggle() {
+//         this.setState({
+//             toggle: !this.state.toggle
+//         });
+//     }
     
-    render(){
-        return(
-            <div>
-                <button className="dot" onClick={this.toggle.bind(this)}>About Me</button>
-                {this.state.toggle ? <AboutMeWindow toggleWindow={this.toggle.bind(this)}/> : null}
-            </div>
-        );
-    }
-}
+//     render(){
+//         return(
+//             <div>
+//                 <button className="dot" onClick={this.toggle.bind(this)}>About Me</button>
+//                 {this.state.toggle ? <AboutMeWindow toggleWindow={this.toggle.bind(this)}/> : null}
+//             </div>
+//         );
+//     }
+// }
 
-class AboutMeWindow extends React.Component {
+class AboutMe extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -111,7 +111,7 @@ class AboutMeWindow extends React.Component {
                                 </div>
                                 </center>
                             </div>
-                        <div id="exit" onClick={this.props.toggleWindow}>Exit</div> 
+                        <Link to="/"><div id="exit" >Exit</div> </Link>
                     </div>
             </div>
         );

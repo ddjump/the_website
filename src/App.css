@@ -15,6 +15,50 @@ input {
   bottom: 5%;
 }
 
+.dot {
+    height: 130px;
+    width: 130px;
+    top: 16%;
+    left: 16%;
+    position: fixed;
+    background-color: white;
+    border-style: solid;
+    border-color: #FD9C6D;
+    border-width: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    font-family: 'Permanent Marker';
+    font-weight:bold;
+    font-size:1.0em;
+    animation-name: move;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    outline: 0;
+}
+
+@keyframes move {
+    10%  { transform: translateX(6px);  }
+    20%  { transform: translateX(-6px);  }
+    30%  { transform: translateY(-6px); }
+    40%  { transform: translateY(6px);  }
+    50%  { transform: translateX(4px);  }
+    60%  { transform: translateX(-4px);  }
+    70%  { transform: translateY(-7px); }
+    80%  { transform: translateY(7px);  }
+    90%  { transform: translateX(4px);  }
+    100% { transform: translateX(0);    }
+}
+
+@keyframes stop {
+}
+
+.dot:hover {
+    animation: stop;
+    background-color: #FD9C6D;
+    color: white;
+    border: none;
+}
+
 .resumeButton {
   height: 120px;
   width: 120px;
@@ -107,52 +151,5 @@ input {
     100% { transform: rotate(45deg); }
 } 
 
-.triContainer {
-  position: fixed;
-  right: 13%;
-  bottom: 16%;
-}
-
-.triangle {
-  position: relative;
-  width:0;
-  /* border-radius: 10%; */
-  /* bottom: -65%; */
-  /* right: -73%; */
-  border-bottom:solid 150px limegreen;
-  border-right:solid 90px transparent;
-  border-left:solid 90px transparent;
-}
-
-.triangle .empty {
-  position: absolute;
-  top: 10px;
-  left:-80px;
-  width:0;
-  border-bottom:solid 135px white;
-  border-right:solid 80px transparent;
-  border-left:solid 80px transparent;
-}
-
-.triContainer:hover > .triangle > .empty {
-  border-bottom:solid 135px limegreen;
-}
-
-.triContainer:hover > #contactTitle {
-  color: white;
-}
-
-#contactTitle {
-  font-family: 'Permanent Marker';
-  font-size:1.0em;
-  position: fixed;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center */
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  margin-right: -50%;
-}
 
 

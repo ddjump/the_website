@@ -1,0 +1,129 @@
+.triContainer {
+    position: fixed;
+    right: 13%;
+    bottom: 16%;
+    animation-name: rightLeft;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+  }
+  
+  .triClickedContainer {
+    position: fixed;
+    right: 13%;
+    bottom: 16%;
+  }
+
+  .triangleClicked {
+    position: relative;
+    width:0;
+    border-bottom:solid 150px limegreen;
+    border-right:solid 90px transparent;
+    border-left:solid 90px transparent;
+  }
+
+  .triangle {
+    position: relative;
+    width:0;
+    border-bottom:solid 150px limegreen;
+    border-right:solid 90px transparent;
+    border-left:solid 90px transparent;
+  }
+  
+  .triangle .empty {
+    position: absolute;
+    top: 10px;
+    left:-80px;
+    width:0;
+    border-bottom:solid 135px white;
+    border-right:solid 80px transparent;
+    border-left:solid 80px transparent;
+  }
+
+  .triContainer:hover {
+      animation-name: stop;
+  }
+  
+  .triContainer:hover > .triangle > .empty {
+    border-bottom:solid 135px limegreen;
+  }
+  
+  .triContainer:hover > #contactTitle {
+    color: white;
+  }
+  
+  #contactTitle {
+    font-family: 'Permanent Marker';
+    font-size:1.0em;
+    position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    margin-right: -50%;
+  }
+
+  @keyframes rightLeft {
+
+      33% {
+          transform: rotate(5deg);
+          transform-origin: bottom right;
+      }
+
+      66% {
+          transform: rotate(-5deg);
+          transform-origin: bottom left;
+      }
+
+      100% {
+          transform: rotate(0deg);
+      }
+  }
+  
+  #emailContact {
+    width: 180px;
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    background-color: limegreen;
+    font-family: 'Inconsolata', monospace;
+
+    position: fixed;
+    right: 13%;
+    bottom: 9%;
+
+    border-radius: 10px;
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center ; /* for horizontal aligning of child divs */
+    align-items : center ;
+  }
+
+  #contactBar {
+    width: 60px;
+    height: 200px;
+    /* background-color: limegreen; */
+    /* border-style: solid; */
+    position: fixed;
+    right: 12%;
+    bottom: 13%;
+    transform: rotate(-31deg);
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center ; /* for horizontal aligning of child divs */
+    align-items : center ;
+  }
+
+  #smallTriangle {
+    height: 40px;
+    width: 40px;
+    margin-left: 0px;
+    transform: rotate(30deg);
+  }
+
+  #smallTriangle2 {
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+    transform: rotate(92deg);
+  }

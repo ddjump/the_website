@@ -43,7 +43,7 @@ class Projects extends React.Component {
                 <div id="optionProjects">
                     {diamonds}
                 </div>
-                {this.state.clicked !== null ? <Display choice={this.state.clicked}/> : null}
+                {this.state.clicked !== null ? <Display choice={this.state.clicked}/> : <p id="displayText">Click to View Project </p>}
             </div>
         );
     }

@@ -2,18 +2,30 @@
 /* @import url("https://fonts.googleapis.com/css?family=Rubik"); */
 
 #text {
-    position: fixed;
-    top: 40%;
-    left: 54%;
-    margin-top: -100px;
-    margin-left: -200px;
-    font-family: 'Permanent Marker';
-    /* font-family: 'Rubik', sans-serif; */
-    /* font-family: 'Inconsolata', monospace; */
-    font-size: 25px;
-    width: 25%;
-    /* background-color:white; */
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  z-index: 100;
+
+  /* border-style: solid; */
+
+  height: 250px;
+  margin-top: -1255px;
+
+  width: 400px;
+  margin-left: -200px;
+  color: black;
+
+  background-color: white;
+  
+  line-height: 10px;
+  font-family: 'Permanent Marker';
+
+  /* display: flex; */
+  align-items: center;
+  /* justify-content: center; */
 }
+
 
 @keyframes wave {
     /* 20%  { transform: translateX(4px);  }
@@ -27,4 +39,16 @@
   .wave:hover {
     animation: wave 1s ease;
     animation-iteration-count: 3;
+  }
+
+  #myName {
+    font-size: 55px;
+  }
+
+  #job {
+    font-size: 25px;
+  }
+
+  #emoji {
+    font-size: 30px;
   }

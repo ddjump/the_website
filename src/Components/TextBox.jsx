@@ -12,32 +12,12 @@ class TextBox extends React.Component {
     render() {
         return(
             <div id="text">
-                <div className="box wave"><h2><span role='img' aria-label="Close">👋</span></h2></div>Hi! I'm Daniel Yen, a Full Stack Developer who loves to make applications. <HoverEmoji />
+                <div className="box wave">
+                </div>
+                    <center><p id="myName">Daniel Yen</p>
+                    <p id="job">Web & Mobile Developer</p>
+                </center>
             </div>
-        );
-    }
-}
-
-class HoverEmoji extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isHover: false
-        };
-    }
-
-    toggleHoverState() {
-        this.setState({
-            isHover: !this.state.isHover
-        });
-    }
-
-    render() {
-        return(
-            <span role='img' aria-label="Close"
-                onMouseEnter={this.toggleHoverState.bind(this)} 
-                onMouseLeave={this.toggleHoverState.bind(this)}
-                >{this.state.isHover? "😱" : "😊"}💻</span>
         );
     }
 }

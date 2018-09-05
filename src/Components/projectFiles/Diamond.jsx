@@ -11,15 +11,18 @@ class Diamond extends React.Component {
 
     render() {
         var icon = null;
+        var classname = null;
         if(this.props.clicked === "true") {
             icon = diamondFilled;
+            classname = "biggerDiamond";
         } else {
             icon = diamond;
+            classname = "";
         }
 
         return(
             <div onClick={this.handClick.bind(this)}>
-                <img src={icon} id="diamond" alt="diamond"/>
+                <img src={icon} id="diamond" alt="diamond" className={classname}/>
             </div>
         );
     }
