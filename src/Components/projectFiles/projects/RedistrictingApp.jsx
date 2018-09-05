@@ -10,7 +10,7 @@ class RedistrictingApp extends React.Component {
     }
 
     render() {
-        var toolArray = this.state.tools.map((i) => <div id="tool">{i}</div>);
+        var toolArray = this.state.tools.map((i) => <div id="tool" key={i} >{i}</div>);
         return(
             <div id="projectBox">
                 <p><div id="projectTitle">RedistrictingApp</div><div>May 2018</div></p>

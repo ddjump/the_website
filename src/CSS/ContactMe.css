@@ -99,13 +99,13 @@
   }
 
   #contactBar {
-    width: 60px;
+    width: 41px;
     height: 200px;
     /* background-color: limegreen; */
     /* border-style: solid; */
     position: fixed;
     right: 12%;
-    bottom: 13%;
+    bottom: 14%;
     transform: rotate(-31deg);
 
     display:flex;
@@ -114,16 +114,79 @@
     align-items : center ;
   }
 
-  #smallTriangle {
-    height: 40px;
-    width: 40px;
-    margin-left: 0px;
-    transform: rotate(30deg);
+  #insideOne {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    /* border-style: solid; */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items : center ;
+  }
+
+  #smallTriangle1 {
+    height: 65px;
+    width: 65px;
+    transform: rotate(32deg);
+    /* transform-origin: top left; */
+    margin-right: 10px;
+    position: relative;
   }
 
   #smallTriangle2 {
-    height: 40px;
-    width: 40px;
-    margin-left: 8px;
-    transform: rotate(92deg);
+    height: 60px;
+    width: 60px;
+    margin-left: 5px;
+    transform: rotate(90deg);
+  }
+
+  #smallTriangle3 {
+    height: 60px;
+    width: 60px;
+    transform: rotate(32deg);
+    /* transform-origin: top left; */
+    margin-right: 10px;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  #linkedin {
+    height: 30px;
+    width: 30px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 35%;
+    top: 20%;
+  }
+
+  #angel {
+    height: 30px;
+    width: 30px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 20%;
+    top: 25%;
+  }
+
+  #contactGithub {
+    height: 30px;
+    width: 30px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 35%;
+    top: 20%;
+  }
+
+  #linkedin:hover {
+    /* transform: rotate(32deg); */
+    transform: scale(2);
+  }
+
+  #angel:hover {
+    transform: scale(2);
+  }
+
+  #contactGithub:hover {
+    transform: scale(2);
   }
