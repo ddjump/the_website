@@ -24,7 +24,6 @@ class WorkPanel extends React.Component {
     }
 
     handleClick(i) {
-        console.log("handleClick " + i);
         if(this.state.doubleClick) {
             this.setState({doubleClick: false, choiceClicked: null});
         } else if(i === this.state.choiceClicked) {
@@ -38,7 +37,6 @@ class WorkPanel extends React.Component {
     render() {
         var choices = this.state.clickArray.map((choice, i) => <div key={choice.id}><ClickBox company={choice.company} year={choice.year} onClick={() => this.handleClick(i)} clicked={this.state.choiceClicked} number={choice.id}/><LineHeight /></div>);
         var infoView = null;
-        console.log(this.state.choiceClicked);
         if(this.state.doubleClick) {
             infoView = null;
         } else if(this.state.choiceClicked === 0) {

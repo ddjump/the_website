@@ -20,6 +20,8 @@ class Resume extends React.Component {
 
     handleClick(i) {
         if(i === 3) {
+            window.open("https://drive.google.com/file/d/1PDfljYtzvwuQpC10ukFMsWvK5mDmfoXm/view?usp=sharing", "_blank");
+            this.clickBack();
             return;
         }
 
@@ -28,7 +30,6 @@ class Resume extends React.Component {
             this.setState({optionClicked: clicked, options: [clicked], optionOpen: true});
         } else {
             this.clickBack();
-            
         }
     }
 
@@ -82,6 +83,14 @@ class Panel extends React.Component {
             styleClass = this.props.title;
         }
 
+        //var whichMethod = null;
+
+        // if(this.props.title === "Download") {
+        //     whichMethod = window.open("https://drive.google.com/file/d/1PDfljYtzvwuQpC10ukFMsWvK5mDmfoXm/view?usp=sharing", "_blank");
+        // } else {
+        //     whichMethod = this.handleClick.bind(this);
+        // }
+
         return(
             <div id={styleClass} onClick={this.handleClick.bind(this)}>
                 <center><p className="title">{this.props.title}</p></center>
@@ -102,7 +111,6 @@ class Option extends React.Component {
     render() {
         var display = null;
         const option = this.state.option;
-
         if(this.state.open) {
             switch(option) {
                 case 'Education':
@@ -114,8 +122,7 @@ class Option extends React.Component {
                 case 'Work Experience':
                     display = <WorkPanel />;
                     break;
-                case 'Personal':
-                    display = null;
+                case 'Download':
                     break;
                 default:
                     display = null;

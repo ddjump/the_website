@@ -23,13 +23,13 @@ class Display extends React.Component {
                 show = <EAmazon />;
                 break;
             case 3:
-                show = <MapEditor />;
+                show = <MineSweeper />;
                 break;
             case 4:
-                show = <SlideShowMaker />;
+                show = <MapEditor />;
                 break;
             case 5:
-                show = <MineSweeper />;
+                show = <SlideShowMaker />;
                 break;
             default:
                 show = null;

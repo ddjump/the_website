@@ -94,15 +94,13 @@
 
     display:flex;
     flex-wrap: wrap;
-    justify-content: center ; /* for horizontal aligning of child divs */
+    justify-content: center ; 
     align-items : center ;
   }
 
   #contactBar {
     width: 41px;
     height: 200px;
-    /* background-color: limegreen; */
-    /* border-style: solid; */
     position: fixed;
     right: 12%;
     bottom: 14%;
@@ -110,7 +108,7 @@
 
     display:flex;
     flex-wrap: wrap;
-    justify-content: center ; /* for horizontal aligning of child divs */
+    justify-content: center ;
     align-items : center ;
   }
 
@@ -178,15 +176,7 @@
     top: 20%;
   }
 
-  #linkedin:hover {
-    /* transform: rotate(32deg); */
-    transform: scale(2);
-  }
-
-  #angel:hover {
-    transform: scale(2);
-  }
-
-  #contactGithub:hover {
-    transform: scale(2);
+  #insideOne:hover {
+    transform: rotate(32deg);
+    transform: scale(1.3);
   }

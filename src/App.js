@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import TextBox from './Components/TextBox.jsx';
-// import AboutMe from './Components/AboutMe.jsx';
 import { Link } from 'react-router-dom';
 import ContactMe from './Components/ContactMe.jsx';
 

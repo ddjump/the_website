@@ -23,7 +23,6 @@ class ContactMe extends React.Component {
 
 
     render() {
-        console.log(this.state.clicked + "RENDER")
         return(
             <div>
                 {this.state.clicked? <TriangleClicked onClick={() => this.closeContact()}/> : <Triangle onClick={() => this.openContact()}/>}
@@ -54,20 +53,19 @@ class TriangleClicked extends React.Component {
                 </div>
                 <div id="emailContact"><p>dyen576@gmail.com</p></div>
                 <div id="contactBar">
-                    <div id="insideOne">
+                    <div id="insideOne" onClick={()=> window.open("https://linkedin.com/in/dyen3", "_blank")}>
                         <img src={smallTriangle} id="smallTriangle1" alt="triangle"/>
                         <img src={linkedin} id="linkedin" alt="linkedin"/>
                     </div>
-                    <div id="insideOne">
+                    <div id="insideOne" onClick={()=> window.open("https://angel.co/daniel-yen-2", "_blank")}>
                         <img src={smallTriangle} id="smallTriangle2" alt="triangle" className="two"/>
                         <img src={angel} id="angel" alt="angel"/>
                     </div>
-                    <div id="insideOne">
+                    <div id="insideOne" onClick={()=> window.open("https://github.com/ddjump", "_blank")}>
                         <img src={smallTriangle} id="smallTriangle3" alt="triangle" className="three"/>
                         <img src={github} id="contactGithub" alt="github"/>
                     </div>
                 </div>
-                {/* <img src={smallTriangle} id="smallTriangle" alt="triangle" /> */}
             </div>
         );
     }

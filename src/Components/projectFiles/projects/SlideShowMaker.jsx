@@ -13,8 +13,8 @@ class SlideShowMaker extends React.Component {
         var toolArray = this.state.tools.map((i) => <div id="tool">{i}</div>);
         return(
             <div id="projectBox">
-                <p><div id="projectTitle">SlideShowMaker</div><div>May 2018</div></p>
-                <p>Web application that analyzes from politicians manipulate district boundaries to gain an advantage. By	using	data	collected,	district	boundaries	can	be	redrawn	to	ensure	a	fair	election. Worked	on	the	front	end	by	using	Google	Map	features to	create	an	interactive	map. Interactive	features	such	as	zooming	in	a	state	and	also	redrawing	new	boundaries	based	on	data.</p>
+                <p><div id="projectTitle">SlideShowMaker</div><div>Nov 2015</div></p>
+                <p>Implemented	Web	utility	that	displays	slideshows	in	the	browser	and	allows	dynamic	actions	such	as running	the	presentation	with	animations	using	Javascript.</p>
                 <div id="toolBox">
                     {toolArray}
                 </div>
