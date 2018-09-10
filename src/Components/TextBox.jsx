@@ -20,6 +20,6 @@ class TextBox extends React.Component {
             </div>
         );
     }
-}
+}       
 
 export default TextBox;

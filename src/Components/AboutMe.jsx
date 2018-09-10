@@ -9,30 +9,6 @@ import TV from './bubble/TV.jsx';
 import { Link } from 'react-router-dom';
 import Dan from '../Images/danYen.jpg'
 
-// class AboutMe extends React.Component {
-//     constructor(props) {
-//         super(props)
-//         this.state = {
-//             toggle: false
-//         }
-//     }
-
-//     toggle() {
-//         this.setState({
-//             toggle: !this.state.toggle
-//         });
-//     }
-    
-//     render(){
-//         return(
-//             <div>
-//                 <button className="dot" onClick={this.toggle.bind(this)}>About Me</button>
-//                 {this.state.toggle ? <AboutMeWindow toggleWindow={this.toggle.bind(this)}/> : null}
-//             </div>
-//         );
-//     }
-// }
-
 class AboutMe extends React.Component {
     constructor(props) {
         super(props);
