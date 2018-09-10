@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import '../CSS/Resume.css';
 import arrow from '../Images/arrow2.png';
-// import IconButton from '../ReuseComponent/IconButton.jsx';
 import EducationPanel from './panels/EducationPanel.jsx';
 import SkillsPanel from './panels/SkillsPanel.jsx';
 import WorkPanel from './panels/WorkPanel.jsx';
@@ -82,14 +81,6 @@ class Panel extends React.Component {
         } else {
             styleClass = this.props.title;
         }
-
-        //var whichMethod = null;
-
-        // if(this.props.title === "Download") {
-        //     whichMethod = window.open("https://drive.google.com/file/d/1PDfljYtzvwuQpC10ukFMsWvK5mDmfoXm/view?usp=sharing", "_blank");
-        // } else {
-        //     whichMethod = this.handleClick.bind(this);
-        // }
 
         return(
             <div id={styleClass} onClick={this.handleClick.bind(this)}>

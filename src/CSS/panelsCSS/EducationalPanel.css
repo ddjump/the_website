@@ -13,46 +13,83 @@
   #stony {
     height: 50px;
     width: 50px;
-    position: fixed;
-    margin-left: 2%;
-    margin-top: 2%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
     border-radius: 10px;
   }
 
   #stonyText {
-    position: fixed;
-    margin-top: 2%;
-    margin-left: 7%;
+    position: absolute;
+    top: 4%;
+    left: 17%;
   }
 
   #stonyText2 {
       font-size: 13px;
-      position: fixed;
-      margin-top: 6%;
-      margin-left: 7%;
+      position: absolute;
+      top: 13%;
+      left: 17%;
+  }
+
+  #stonyCourse {
+      font-size: 15px;
+      height: 50px;
+      width: 110px;
+      font-family: 'Inconsolata', monospace;
+      position: absolute;
+      top: 6%;
+      right: 20%;
+      background-color: white;
+      border-style: solid;
+      border-width: 3px;
+      border-color: royalblue;
+      border-radius: 10px;
+      outline: none;
   }
 
   #ncc {
       height: 45px;
       width: 50px;
       border-radius: 10px;
-      position: fixed;
-      margin-left: 2%;
-      margin-top: 10%;
+      position: absolute;
+      left: 5%;
+      top: 25%;
   }
 
   #nccText {
-    position: fixed;
-    margin-top: 10%;
-    margin-left: 7%;
+    position: absolute;
+    top: 24%;
+    left: 17%;
   }
 
   #nccText2 {
       font-size: 13px;
-      position: fixed;
-      margin-top: 14%;
-      margin-left: 7%;
+      position: absolute;
+      top: 33%;
+      left: 17%;
   }
+
+  #nccCourse {
+    font-size: 15px;
+    height: 50px;
+    width: 110px;
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    top: 26%;
+    right: 20%;
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: royalblue;
+    border-radius: 10px;
+    outline: none;
+}
+
+#stonyCourse:hover, #nccCourse:hover {
+    color: white;
+    background-color: royalblue;
+}
 
   #coursework {
       margin-left: 5%;

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import App from './App.js';
@@ -22,4 +22,4 @@ ReactDOM.render(
     </BrowserRouter>
     
     ), document.getElementById('root'));
-registerServiceWorker();
+// registerServiceWorker();

@@ -11,9 +11,11 @@ class EducationPanel extends React.Component{
                 <img src={stonyIcon} alt="stony" id="stony"/>
                 <b><p id="stonyText">Stony Brook University<br/>B.S. Computer Science</p></b>
                 <p id="stonyText2">Location: Stony Brook, NY<br/>Fall 2015 - Summer 2018</p>
+                <button id="stonyCourse" onClick={()=> window.open("https://www.stonybrook.edu/sb/bulletin/current/courses/cse/#216", "_blank")}>View Courses</button>
                 <img src={nccIcon} alt="ncc" id="ncc"/>
                 <b><p id="nccText">Nassua Community College<br/>A.S. Computer Science</p></b>
                 <p id="nccText2">Location: Garden City, NY<br/>Fall 2013 - Spring 2015</p>
+                <button id="nccCourse" onClick={()=> window.open("https://collegecatalog.ncc.edu/current/courses/CSC.html#217", "_blank")}>View Courses</button>
                 <div id="coursework">
                     <p id="rc">Relevant Coursework:</p>
                     <table id="courseTable">

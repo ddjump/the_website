@@ -1,26 +1,20 @@
 
 #projectBox {
-    position: fixed;
-    left: 50%;
-    bottom: 10%;
-    z-index: 100;
-
-    /* border-style: solid; */
-  
-    height: 230px;
-    margin-top: -115px;
-  
-    width: 800px;
-    margin-left: -400px;
     color: black;
+    position: absolute;
+    /* border-style: solid; */
+
+    height: 225px;
+    width: 810px;
+    top: 5%;
+    left: 5%;
+
     font-family: 'Inconsolata', monospace;
 }
 
 #projectTitle {
     /* font-family: 'Inconsolata', monospace; */
     font-size: 27px;
-    /* position: absolute;
-    top: 0%; */
 }
 #toolBox {
     width: 800px;
