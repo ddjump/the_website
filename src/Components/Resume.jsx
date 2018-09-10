@@ -47,9 +47,11 @@ class Resume extends React.Component {
             option = null;
         }
 
+        const baseUrl = process.env.PUBLIC_URL;
+
         return(
             <div className="resumePage">
-                <Link to="/"><img alt="arrow" id="arrow" src={ arrow }/></Link>
+                <Link to={baseUrl + "/"}><img alt="arrow" id="arrow" src={ arrow }/></Link>
                 <center><h1 id="resume">Resume</h1></center>
                 <div className="container">
                     <ReactCSSTransitionGroup

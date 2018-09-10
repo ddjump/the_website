@@ -34,10 +34,10 @@ class Projects extends React.Component {
             }
         });
 
-
+        const baseUrl = process.env.PUBLIC_URL;
         return(
             <div>
-                <Link to="/"><img alt="arrowRed" id="arrowRed" src={ arrowRed }/></Link>
+                <Link to={baseUrl + "/"}><img alt="arrowRed" id="arrowRed" src={ arrowRed }/></Link>
                 <center><p id="projectsTitle">Projects</p></center>
                 <img alt="github" id="github" src={ github } onClick={()=> window.open("https://github.com/ddjump", "_blank")}/>
                 <div id="optionProjects">

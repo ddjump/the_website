@@ -8,15 +8,17 @@ import AboutMe from './Components/AboutMe.jsx';
 import Resume from './Components/Resume.jsx';
 import Projects from './Components/Projects.jsx';
 
+const baseUrl = process.env.PUBLIC_URL;
+
 ReactDOM.render(
     (
     <BrowserRouter>
         <div>
             <Switch>
-                <Route path="/" exact component={ App } />
-                <Route path="/aboutme" component={ AboutMe } />
-                <Route path="/resume" component={ Resume } />
-                <Route path="/projects" component={ Projects }/>
+                <Route path={baseUrl + "/"} exact component={ App } />
+                <Route path={baseUrl + "/aboutme"} component={ AboutMe } />
+                <Route path={baseUrl + "/resume"} component={ Resume } />
+                <Route path={baseUrl + "/projects"} component={ Projects }/>
             </Switch>
         </div>
     </BrowserRouter>

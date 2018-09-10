@@ -19,10 +19,11 @@ import graphqlIcon from '../Images/graphqlIcon.svg';
 
 class Resume extends React.Component {
     render() {
+        const baseUrl = process.env.PUBLIC_URL;
         return(
             <div id="mainResume">
                 <div id="container">
-                    <Link to="/"><img alt="arrow" id="arrow" src={ arrow }/></Link>
+                    <Link to={baseUrl + "/"}><img alt="arrow" id="arrow" src={ arrow }/></Link>
                     {/* <center><h1 id="resumeTitle">Resume</h1></center> */}
                     <center><IconButton /></center>
                     <ProgrammingBox />

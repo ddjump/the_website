@@ -26,13 +26,15 @@ class App extends Component {
       height : '100vh'
     }
 
+    const baseUrl = process.env.PUBLIC_URL;
+
     return (
       <div style={rootStyle}>
         <TextBox />
         {/* <input id="textField" value={this.state.backgroundColor} onChange={this.changeColor.bind(this)}/> */}
-        <Link to="/aboutme"><button className="dot">About Me</button></Link>
-        <Link to="/resume"><button className="resumeButton">Resume</button></Link>
-        <Link to="/projects"><button id="projects" className="projectsButton"><div id="projectText">Projects</div></button></Link>
+        <Link to={baseUrl + "/aboutme"}><button className="dot">About Me</button></Link>
+        <Link to={baseUrl + "/resume"}><button className="resumeButton">Resume</button></Link>
+        <Link to={baseUrl + "/projects"}><button id="projects" className="projectsButton"><div id="projectText">Projects</div></button></Link>
         <ContactMe />
       </div>
     );

@@ -46,6 +46,8 @@ class AboutMe extends React.Component {
     }
 
     render() {
+        const baseUrl = process.env.PUBLIC_URL;
+
         return(
             <div className='popup'>
                     <div id="boxxx">
@@ -87,7 +89,7 @@ class AboutMe extends React.Component {
                                 </div>
                                 </center>
                             </div>
-                        <Link to="/"><div id="exit" >Exit</div> </Link>
+                        <Link to={baseUrl + "/"}><div id="exit" >Exit</div> </Link>
                     </div>
             </div>
         );
